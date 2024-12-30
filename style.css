@@ -18,6 +18,15 @@ body {
     z-index: -1;
 }
 
+@keyframes rainbow {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
 .countdown {
     text-align: center;
     text-shadow: 
