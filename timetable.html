@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shake till 2025</title>
+    <style>
+        body {
+            font-size: 0.8em; 
+            font-family: Arial, sans-serif; 
+            height: 100vh;
+            overflow: hidden;
+            line-height: 1.6; 
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(#5afa6e, #bae84c, #f0dd3d, #b4e2b6, #9be4ed, #c6d2f2, #f7eef4);
+            opacity: 0.8;
+            animation: rainbow 5s infinite alternate;
+            z-index: -1;
+        }
+
+        #page {
+            position: relative;
+            background: #fff;
+            width: 40vh;
+            height: 46vh;
+            transform: rotate(2deg); 
+            padding: 4vh 4vh;
+            padding-bottom: 14em;
+            margin: 10vh auto 0 auto;
+            margin-top: 13vh;
+            box-shadow: 1.5vh 1.5vh 3vh -2vh rgba(0, 0, 0, 1);
+            overflow: hidden;
+            overflow-y: hidden;
+            max-height: 85%;
+        }
+
+        @media screen and (max-width: 768px) {
+            #page {
+                width: 40vh;
+                height: 77vh;
+                padding: 4vh;
+                margin-top: 2vh;
+            }
+
+            .img img {
+                max-width: 90%;
+            }
+
+            .order {
+                flex: 1 1 25%; 
+                font-weight: bold;
+                text-align: left;
+            }
+
+            .info-list p {
+                flex: 1 1 75%; 
+                margin: 0;
+                text-align: left;
+            }
+
+            .countdown {
+                margin-top: 3vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <main id="page">
+        <p><b>31일 오후 6시 30분에 공개됩니다!</b></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
