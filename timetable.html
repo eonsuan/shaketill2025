@@ -25,21 +25,30 @@
             z-index: -1;
         }
 
-#page {
-    position: relative;
-    background: #fff;
-    width: 20rem; 
-    height: 25rem; 
-    transform: rotate(2deg); 
-    padding: 2rem;
-    padding-bottom: 12em; 
-    margin: 5rem auto 0 auto;
-    margin-top: 3rem;
-    box-shadow: 1.5rem 1.5rem 3rem -2rem rgba(0, 0, 0, 1);
-    overflow: hidden;
-    overflow-y: hidden;
-    max-height: 85%; 
+        @keyframes rainbow {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0.8;
+    }
 }
+        
+    #page {
+        position: relative;
+        background: #fff;
+        width: 20rem; 
+        height: 25rem; 
+        transform: rotate(2deg); 
+        padding: 2rem;
+        padding-bottom: 12em; 
+        margin: 5rem auto 0 auto;
+        margin-top: 3rem;
+        box-shadow: 1.5rem 1.5rem 3rem -2rem rgba(0, 0, 0, 1);
+        overflow: hidden;
+        overflow-y: hidden;
+        max-height: 85%; 
+    }    
 
         a {
             color: black; 
