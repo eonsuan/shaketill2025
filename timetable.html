@@ -25,15 +25,6 @@
             z-index: -1;
         }
 
-        @keyframes rainbow {
-    0% {
-        opacity: 0.1;
-    }
-    100% {
-        opacity: 0.8;
-    }
-}
-
         #page {
             position: relative;
             background: #fff;
@@ -50,14 +41,59 @@
             max-height: 85%;
         }
 
+        a {
+            color: black; 
+            text-decoration: underline; 
+            text-decoration-color: black; 
+            text-underline-offset: 3px;
+        }
+
+        .img {
+            width: 80%; 
+        }
+
+        .img img { 
+            display: block; 
+            margin: 0 auto;
+            max-width: 80%; 
+            height: auto; 
+        }
+
+        table {
+            width: 100%; 
+        }
+
+        table tr {
+            font-size: 0.8rem;
+            line-height: 2rem; 
+        }
+
+        table td {
+            padding: 0rem;
+        }
+
+        table td:first-child {
+            text-align: left; 
+        }
+
+        table td:last-child {
+            text-align: left; 
+        }
+
+        .back-link {
+            margin-top: 1rem;
+            display: block;
+            text-align: left;
+        }
+
         @media screen and (max-width: 768px) {
             #page {
-                width: 35vh;
+                width: 30vh;
                 height: 60vh;
                 padding: 4vh;
                 margin-top: 13vh;
             }
-            
+
             .img img {
                 max-width: 90%;
             }
@@ -83,8 +119,40 @@
 <body>
     <div class="background"></div>
     <main id="page">
-        <p><b>31일 오후 6시 30분에 공개됩니다!</b></p>
+        <div class="img"><img src="./time.png" width="80%"><br
+        <div class="timetable">
+            <table>
+                <tr>
+                    <td>20:00</td>
+                    <td>입장 시작 및 아이스 브레이킹</td>
+                </tr>
+                <tr>
+                    <td>21:30</td>
+                    <td>정리 및 자유 시간</td>
+                </tr>
+                <tr>
+                    <td>22:00</td>
+                    <td>레크레이션</td>
+                </tr>
+                <tr>
+                    <td>23:55</td>
+                    <td>새해 카운트다운</td>
+                </tr>
+                <tr>
+                    <td>00:10</td>
+                    <td>쉐이크 어워즈</td>
+                </tr>
+                <tr>
+                    <td>00:30</td>
+                    <td>신나는 파티 시간</td>
+                </tr>
+                <tr>
+                    <td>08:00</td>
+                    <td>청소 및 귀가</td>
+                </tr>
+            </table>
+        </div>
+        <a class="back-link" href="./index.html">뒤로 가기</a>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
